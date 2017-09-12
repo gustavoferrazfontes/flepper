@@ -24,6 +24,7 @@ namespace Flepper.Tests.Unit.QueryBuilder.Commands
         [Fact]
         public void ShouldCreateDeleteStatementWithWhere()
         {
+            
             FlepperQueryBuilder.Delete()
                 .From("Test")
                 .Where("Id")
