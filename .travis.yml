@@ -1,7 +1,5 @@
 language: csharp
 solution: Flepper.sln
-install:
-    - dotnet restore
 
 script:
   - dotnet build
