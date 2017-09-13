@@ -6,3 +6,9 @@ script:
   - dotnet restore
   - dotnet build
   - dotnet test Flepper.Tests.Unit/Flepper.Tests.Unit.csproj
+notifications:
+  email:
+    recipients:
+      - gustavo.ferrazfontes@gmail.com
+    on_success: always
+    on_failure: always
