@@ -15,7 +15,7 @@ namespace Flepper.Tests.Unit.QueryBuilder.Commands
             FlepperQueryBuilder.Query
                 .Trim()
                 .Should()
-                .Be("SELECT * FROM [user]");
+                .NotBe("SELECT * FROM [user]");
         }
 
         [Fact]
