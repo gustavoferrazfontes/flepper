@@ -2,6 +2,6 @@ language: csharp
 solution: Flepper.sln
 install:
   - nuget restore Flepper.sln
-  - nuget install xunit.runners -Version 1.9.2 -./Flepper.Tests.Unit testrunner
+  - nuget install xunit.runners -Version 1.9.2 ./Flepper.Tests.Unit testrunner
 script:
   - xbuild /p:Configuration=Release Flepper.sln
