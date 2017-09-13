@@ -1,5 +1,7 @@
 language: csharp
 solution: Flepper.sln
+mono: none
+dotnet: 1.0.1
 install:
   - nuget restore Flepper.sln
 script:
