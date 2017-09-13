@@ -3,6 +3,6 @@ solution: Flepper.sln
 mono: none
 dotnet: 2.0.0
 script:
-  - dotner restore
+  - dotnet restore
   - dotnet build
   - dotnet test Flepper.Tests.Unit/Flepper.Tests.Unit.csproj
