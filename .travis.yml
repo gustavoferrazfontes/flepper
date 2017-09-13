@@ -1,6 +1,8 @@
 language: csharp
 solution: Flepper.sln
-
+install:
+  - nuget restore Flepper.sln
 script:
+  - dotner restore
   - dotnet build
   - dotnet test Flepper.Tests.Unit/Flepper.Tests.Unit.csproj
