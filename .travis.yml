@@ -1,7 +1,8 @@
 language: csharp
 solution: Flepper.sln
 install:
-  - nuget restore Flepper.sln
-  - nuget install xunit.runners -Version 1.9.2 ./Flepper.Tests.Unit testrunner
+    - dotnet restore
+
 script:
-  - xbuild /p:Configuration=Release Flepper.sln
+  - dotnet build
+  - dotnet test Flepper.Tests.Unit/Flepper.Tests.Unit.csproj
